@@ -1,0 +1,30 @@
+SCANDIR_SORT_ASCENDING: 0
+SCANDIR_SORT_DESCENDING: 1
+SCANDIR_SORT_NONE: 2
+*** Testing scandir() : usage variations ***
+array(4) {
+  [0]=>
+  string(1) "."
+  [1]=>
+  string(2) ".."
+  [2]=>
+  string(51) "私はガラスを食べられますfile1.tmp"
+  [3]=>
+  string(51) "私はガラスを食べられますfile2.tmp"
+}
+array(4) {
+  [0]=>
+  string(51) "私はガラスを食べられますfile2.tmp"
+  [1]=>
+  string(51) "私はガラスを食べられますfile1.tmp"
+  [2]=>
+  string(2) ".."
+  [3]=>
+  string(1) "."
+}
+int(4)
+bool(true)
+bool(true)
+bool(false)
+bool(false)
+===DONE===

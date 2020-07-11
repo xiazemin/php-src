@@ -1,0 +1,192 @@
+
+---- EXPECTED OUTPUT
+*** Testing readdir() : usage variations ***
+
+-- Iteration 1 --
+resource(%d) of type (stream)
+int(1)
+
+-- Iteration 2 --
+resource(%d) of type (stream)
+int(1)
+
+-- Iteration 3 --
+resource(%d) of type (stream)
+int(1)
+
+-- Iteration 4 --
+resource(%d) of type (stream)
+int(1)
+
+-- Iteration 5 --
+resource(%d) of type (stream)
+int(1)
+
+-- Iteration 6 --
+resource(%d) of type (stream)
+int(1)
+
+-- Iteration 7 --
+resource(%d) of type (stream)
+int(1)
+
+-- Iteration 8 --
+resource(%d) of type (stream)
+int(1)
+
+-- Iteration 9 --
+resource(%d) of type (stream)
+int(1)
+
+-- Iteration 10 --
+resource(%d) of type (stream)
+int(1)
+
+-- Iteration 11 --
+resource(%d) of type (stream)
+int(2)
+
+-- Iteration 12 --
+resource(%d) of type (stream)
+int(2)
+
+-- Iteration 13 --
+resource(%d) of type (stream)
+int(2)
+
+-- Iteration 14 --
+resource(%d) of type (stream)
+int(2)
+
+-- Call to readdir() --
+array(16) {
+  [0]=>
+  string(1) "."
+  [1]=>
+  string(2) ".."
+  [2]=>
+  string(45) "私はガラスを食べられます-10.5.tmp"
+  [3]=>
+  string(45) "私はガラスを食べられます-2345.tmp"
+  [4]=>
+  string(40) "私はガラスを食べられます.tmp"
+  [5]=>
+  string(43) "私はガラスを食べられます0.5.tmp"
+  [6]=>
+  string(41) "私はガラスを食べられます0.tmp"
+  [7]=>
+  string(53) "私はガラスを食べられます1.23456789E-9.tmp"
+  [8]=>
+  string(41) "私はガラスを食べられます1.tmp"
+  [9]=>
+  string(44) "私はガラスを食べられます10.5.tmp"
+  [10]=>
+  string(45) "私はガラスを食べられます12345.tmp"
+  [11]=>
+  string(52) "私はガラスを食べられます123456789000.tmp"
+  [12]=>
+  string(45) "私はガラスを食べられますArray.tmp"
+  [13]=>
+  string(51) "私はガラスを食べられますdouble_file.tmp"
+  [14]=>
+  string(47) "私はガラスを食べられますhd_file.tmp"
+  [15]=>
+  string(51) "私はガラスを食べられますsingle_file.tmp"
+}
+===DONE===
+---- ACTUAL OUTPUT
+*** Testing readdir() : usage variations ***
+
+-- Iteration 1 --
+resource(5) of type (stream)
+int(1)
+
+-- Iteration 2 --
+resource(6) of type (stream)
+int(1)
+
+-- Iteration 3 --
+resource(7) of type (stream)
+int(1)
+
+-- Iteration 4 --
+resource(8) of type (stream)
+int(1)
+
+-- Iteration 5 --
+resource(9) of type (stream)
+int(1)
+
+-- Iteration 6 --
+resource(10) of type (stream)
+int(1)
+
+-- Iteration 7 --
+resource(11) of type (stream)
+int(1)
+
+-- Iteration 8 --
+resource(12) of type (stream)
+int(1)
+
+-- Iteration 9 --
+resource(13) of type (stream)
+int(1)
+
+-- Iteration 10 --
+resource(14) of type (stream)
+int(1)
+
+-- Iteration 11 --
+resource(15) of type (stream)
+int(2)
+
+-- Iteration 12 --
+resource(16) of type (stream)
+int(2)
+
+-- Iteration 13 --
+resource(17) of type (stream)
+int(2)
+
+-- Iteration 14 --
+resource(18) of type (stream)
+int(2)
+
+-- Call to readdir() --
+array(16) {
+  [0]=>
+  string(1) "."
+  [1]=>
+  string(2) ".."
+  [2]=>
+  string(51) "私はガラスを食べられます-10.5.tmp"
+  [3]=>
+  string(51) "私はガラスを食べられます-2345.tmp"
+  [4]=>
+  string(46) "私はガラスを食べられます.tmp"
+  [5]=>
+  string(49) "私はガラスを食べられます0.5.tmp"
+  [6]=>
+  string(47) "私はガラスを食べられます0.tmp"
+  [7]=>
+  string(59) "私はガラスを食べられます1.23456789E-9.tmp"
+  [8]=>
+  string(47) "私はガラスを食べられます1.tmp"
+  [9]=>
+  string(50) "私はガラスを食べられます10.5.tmp"
+  [10]=>
+  string(51) "私はガラスを食べられます12345.tmp"
+  [11]=>
+  string(58) "私はガラスを食べられます123456789000.tmp"
+  [12]=>
+  string(51) "私はガラスを食べられますArray.tmp"
+  [13]=>
+  string(57) "私はガラスを食べられますdouble_file.tmp"
+  [14]=>
+  string(53) "私はガラスを食べられますhd_file.tmp"
+  [15]=>
+  string(57) "私はガラスを食べられますsingle_file.tmp"
+}
+===DONE===
+---- FAILED

@@ -1,0 +1,1 @@
+001+ Warning: Declaration of melt\core\DateTime::createFromFormat($format, $time, ?melt\core\DateTimeZone $timezone = NULL) should be compatible with DateTime::createFromFormat($format, $time, $object = NULL) in /Users/didi/PhpstormProjects/c/php-src/ext/date/tests/bug55407.php on line 7

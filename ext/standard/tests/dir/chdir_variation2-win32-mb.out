@@ -1,0 +1,35 @@
+*** Testing chdir() : usage variations ***
+
+-- $directory = './私はガラスを食べられますlevel_one': --
+bool(true)
+bool(true)
+string(113) "/Users/didi/PhpstormProjects/c/php-src/ext/standard/tests/dir/私はガラスを食べられますlevel_one"
+
+-- $directory = '私はガラスを食べられますlevel_one/私はガラスを食べられますlevel_two': --
+bool(true)
+bool(true)
+string(165) "/Users/didi/PhpstormProjects/c/php-src/ext/standard/tests/dir/私はガラスを食べられますlevel_one/私はガラスを食べられますlevel_two"
+
+-- $directory = '..': --
+bool(true)
+string(113) "/Users/didi/PhpstormProjects/c/php-src/ext/standard/tests/dir/私はガラスを食べられますlevel_one"
+
+-- $directory = '私はガラスを食べられますlevel_two', '.': --
+bool(true)
+bool(true)
+string(165) "/Users/didi/PhpstormProjects/c/php-src/ext/standard/tests/dir/私はガラスを食べられますlevel_one/私はガラスを食べられますlevel_two"
+
+-- $directory = '../': --
+bool(true)
+string(113) "/Users/didi/PhpstormProjects/c/php-src/ext/standard/tests/dir/私はガラスを食べられますlevel_one"
+
+-- $directory = './': --
+bool(true)
+bool(true)
+string(165) "/Users/didi/PhpstormProjects/c/php-src/ext/standard/tests/dir/私はガラスを食べられますlevel_one/私はガラスを食べられますlevel_two"
+
+-- $directory = '../../'私はガラスを食べられますlevel_one': --
+bool(true)
+bool(true)
+string(113) "/Users/didi/PhpstormProjects/c/php-src/ext/standard/tests/dir/私はガラスを食べられますlevel_one"
+===DONE===

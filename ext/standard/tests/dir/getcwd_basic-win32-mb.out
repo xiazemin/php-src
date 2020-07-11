@@ -1,0 +1,4 @@
+*** Testing getcwd() : basic functionality ***
+string(38) "/Users/didi/PhpstormProjects/c/php-src"
+string(116) "/Users/didi/PhpstormProjects/c/php-src/ext/standard/tests/dir/私はガラスを食べられますgetcwd_basic"
+===DONE===

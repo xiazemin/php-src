@@ -1,0 +1,20 @@
+
+---- EXPECTED OUTPUT
+string(40) "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+bool(true)
+write
+string(40) "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+bool(true)
+updateTimestamp
+string(40) "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+bool(true)
+write
+---- ACTUAL OUTPUT
+Warning: session_set_save_handler() expects parameter 1 to be SessionHandlerInterface, object given in /Users/didi/PhpstormProjects/c/php-src/ext/session/tests/bug71162.php on line 45
+string(40) "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+bool(true)
+string(40) "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+bool(true)
+string(40) "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+bool(true)
+---- FAILED

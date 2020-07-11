@@ -1,0 +1,35 @@
+*** Testing chdir() : usage variations ***
+
+-- $directory = './私はガラスを食べられますlevel_one': --
+bool(true)
+bool(true)
+string(%d) "%slevel_one"
+
+-- $directory = '私はガラスを食べられますlevel_one/私はガラスを食べられますlevel_two': --
+bool(true)
+bool(true)
+string(%d) "%s私はガラスを食べられますlevel_one%e私はガラスを食べられますlevel_two"
+
+-- $directory = '..': --
+bool(true)
+string(%d) "%s私はガラスを食べられますlevel_one"
+
+-- $directory = '私はガラスを食べられますlevel_two', '.': --
+bool(true)
+bool(true)
+string(%d) "%s私はガラスを食べられますlevel_one%e私はガラスを食べられますlevel_two"
+
+-- $directory = '../': --
+bool(true)
+string(%d) "%slevel_one"
+
+-- $directory = './': --
+bool(true)
+bool(true)
+string(%d) "%s私はガラスを食べられますlevel_one%e私はガラスを食べられますlevel_two"
+
+-- $directory = '../../'私はガラスを食べられますlevel_one': --
+bool(true)
+bool(true)
+string(%d) "%s私はガラスを食べられますlevel_one"
+===DONE===

@@ -1,0 +1,4 @@
+001+ Warning: session_set_save_handler() expects parameter 1 to be SessionHandlerInterface, object given in /Users/didi/PhpstormProjects/c/php-src/ext/session/tests/bug71162.php on line 45
+003- write
+006- updateTimestamp
+009- write

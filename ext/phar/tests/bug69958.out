@@ -1,0 +1,5 @@
+Fatal error: Uncaught BadMethodCallException: phar "/Users/didi/PhpstormProjects/c/php-src/ext/phar/tests/bug69958.tar" exists and must be unlinked prior to conversion in /Users/didi/PhpstormProjects/c/php-src/ext/phar/tests/bug69958.php:3
+Stack trace:
+#0 /Users/didi/PhpstormProjects/c/php-src/ext/phar/tests/bug69958.php(3): PharData->convertToData(2)
+#1 {main}
+  thrown in /Users/didi/PhpstormProjects/c/php-src/ext/phar/tests/bug69958.php on line 3

@@ -1,0 +1,1 @@
+string getext(string str,int count)

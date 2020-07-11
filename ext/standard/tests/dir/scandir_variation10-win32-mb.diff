@@ -1,0 +1,12 @@
+011+   string(51) "私はガラスを食べられますfile1.tmp"
+011-   string(45) "私はガラスを食べられますfile1.tmp"
+013+   string(51) "私はガラスを食べられますfile2.tmp"
+013-   string(45) "私はガラスを食べられますfile2.tmp"
+017+   string(51) "私はガラスを食べられますfile2.tmp"
+017-   string(45) "私はガラスを食べられますfile2.tmp"
+019+   string(51) "私はガラスを食べられますfile1.tmp"
+019-   string(45) "私はガラスを食べられますfile1.tmp"
+028+ bool(false)
+029+ bool(false)
+028- bool(true)
+029- bool(true)

@@ -1,0 +1,3 @@
+/Users/didi/PhpstormProjects/c/php-src/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/didi/PhpstormProjects/c/php-src/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/didi/PhpstormProjects/c/php-src/cmake-build-debug/CMakeFiles/php_src.dir

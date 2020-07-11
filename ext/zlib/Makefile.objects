@@ -1,0 +1,12 @@
+zlib.lo: /Users/didi/PhpstormProjects/c/php-src/ext/zlib/zlib.c
+	$(LIBTOOL) --mode=compile $(CC) -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -I. -I/Users/didi/PhpstormProjects/c/php-src/ext/zlib $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /Users/didi/PhpstormProjects/c/php-src/ext/zlib/zlib.c -o zlib.lo 
+zlib_fopen_wrapper.lo: /Users/didi/PhpstormProjects/c/php-src/ext/zlib/zlib_fopen_wrapper.c
+	$(LIBTOOL) --mode=compile $(CC) -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -I. -I/Users/didi/PhpstormProjects/c/php-src/ext/zlib $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /Users/didi/PhpstormProjects/c/php-src/ext/zlib/zlib_fopen_wrapper.c -o zlib_fopen_wrapper.lo 
+zlib_filter.lo: /Users/didi/PhpstormProjects/c/php-src/ext/zlib/zlib_filter.c
+	$(LIBTOOL) --mode=compile $(CC) -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -I. -I/Users/didi/PhpstormProjects/c/php-src/ext/zlib $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /Users/didi/PhpstormProjects/c/php-src/ext/zlib/zlib_filter.c -o zlib_filter.lo 
+$(phplibdir)/zlib.la: ./zlib.la
+	$(LIBTOOL) --mode=install cp ./zlib.la $(phplibdir)
+
+./zlib.la: $(shared_objects_zlib) $(ZLIB_SHARED_DEPENDENCIES)
+	$(LIBTOOL) --mode=link $(CC) $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS) $(LDFLAGS) -o $@ -export-dynamic -avoid-version -prefer-pic -module -rpath $(phplibdir) $(EXTRA_LDFLAGS) $(shared_objects_zlib) $(ZLIB_SHARED_LIBADD)
+

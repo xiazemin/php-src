@@ -1,0 +1,5 @@
+001+ Warning: SessionHandler::open(): Session is not active in /Users/didi/PhpstormProjects/c/php-src/ext/session/tests/bug69111.php on line 10
+002+ 
+003+ Warning: SessionHandler::write(): Session is not active in /Users/didi/PhpstormProjects/c/php-src/ext/session/tests/bug69111.php on line 11
+004+ 
+005+ Warning: SessionHandler::read(): Session is not active in /Users/didi/PhpstormProjects/c/php-src/ext/session/tests/bug69111.php on line 12

@@ -1,0 +1,4 @@
+012+   string(51) "私はガラスを食べられますfile1.tmp"
+012-   string(45) "私はガラスを食べられますfile1.tmp"
+024+   string(51) "私はガラスを食べられますfile2.tmp"
+024-   string(45) "私はガラスを食べられますfile2.tmp"

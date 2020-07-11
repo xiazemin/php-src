@@ -1,0 +1,64 @@
+
+---- EXPECTED OUTPUT
+*** Testing scandir() : basic functionality ***
+
+-- scandir() with mandatory arguments --
+array(5) {
+  [0]=>
+  string(1) "."
+  [1]=>
+  string(2) ".."
+  [2]=>
+  string(45) "私はガラスを食べられますfile1.tmp"
+  [3]=>
+  string(45) "私はガラスを食べられますfile2.tmp"
+  [4]=>
+  string(45) "私はガラスを食べられますfile3.tmp"
+}
+
+-- scandir() with all arguments --
+array(5) {
+  [0]=>
+  string(45) "私はガラスを食べられますfile3.tmp"
+  [1]=>
+  string(45) "私はガラスを食べられますfile2.tmp"
+  [2]=>
+  string(45) "私はガラスを食べられますfile1.tmp"
+  [3]=>
+  string(2) ".."
+  [4]=>
+  string(1) "."
+}
+===DONE===
+---- ACTUAL OUTPUT
+*** Testing scandir() : basic functionality ***
+
+-- scandir() with mandatory arguments --
+array(5) {
+  [0]=>
+  string(1) "."
+  [1]=>
+  string(2) ".."
+  [2]=>
+  string(51) "私はガラスを食べられますfile1.tmp"
+  [3]=>
+  string(51) "私はガラスを食べられますfile2.tmp"
+  [4]=>
+  string(51) "私はガラスを食べられますfile3.tmp"
+}
+
+-- scandir() with all arguments --
+array(5) {
+  [0]=>
+  string(51) "私はガラスを食べられますfile3.tmp"
+  [1]=>
+  string(51) "私はガラスを食べられますfile2.tmp"
+  [2]=>
+  string(51) "私はガラスを食べられますfile1.tmp"
+  [3]=>
+  string(2) ".."
+  [4]=>
+  string(1) "."
+}
+===DONE===
+---- FAILED

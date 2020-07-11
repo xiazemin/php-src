@@ -1,0 +1,8 @@
+myText.lo: /Users/didi/PhpstormProjects/c/php-src/ext/myText/myText.c
+	$(LIBTOOL) --mode=compile $(CC) -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -I. -I/Users/didi/PhpstormProjects/c/php-src/ext/myText $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /Users/didi/PhpstormProjects/c/php-src/ext/myText/myText.c -o myText.lo 
+$(phplibdir)/myText.la: ./myText.la
+	$(LIBTOOL) --mode=install cp ./myText.la $(phplibdir)
+
+./myText.la: $(shared_objects_myText) $(MYTEXT_SHARED_DEPENDENCIES)
+	$(LIBTOOL) --mode=link $(CC) $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS) $(LDFLAGS) -o $@ -export-dynamic -avoid-version -prefer-pic -module -rpath $(phplibdir) $(EXTRA_LDFLAGS) $(shared_objects_myText) $(MYTEXT_SHARED_LIBADD)
+

@@ -1,0 +1,10 @@
+*** Testing chdir() : basic functionality ***
+
+-- Testing chdir() with absolute path: --
+bool(true)
+string(%d) "%s私はガラスを食べられますlevel_one"
+
+-- Testing chdir() with relative paths: --
+bool(true)
+string(%d) "%s私はガラスを食べられますlevel_one%e私はガラスを食べられますlevel_two"
+===DONE===

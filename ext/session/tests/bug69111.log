@@ -1,0 +1,11 @@
+
+---- EXPECTED OUTPUT
+bool(false)
+---- ACTUAL OUTPUT
+Warning: SessionHandler::open(): Session is not active in /Users/didi/PhpstormProjects/c/php-src/ext/session/tests/bug69111.php on line 10
+
+Warning: SessionHandler::write(): Session is not active in /Users/didi/PhpstormProjects/c/php-src/ext/session/tests/bug69111.php on line 11
+
+Warning: SessionHandler::read(): Session is not active in /Users/didi/PhpstormProjects/c/php-src/ext/session/tests/bug69111.php on line 12
+bool(false)
+---- FAILED

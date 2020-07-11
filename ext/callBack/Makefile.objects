@@ -1,0 +1,8 @@
+callBack.lo: /Users/didi/PhpstormProjects/c/php-src/ext/callBack/callBack.c
+	$(LIBTOOL) --mode=compile $(CC) -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -I. -I/Users/didi/PhpstormProjects/c/php-src/ext/callBack $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /Users/didi/PhpstormProjects/c/php-src/ext/callBack/callBack.c -o callBack.lo 
+$(phplibdir)/callBack.la: ./callBack.la
+	$(LIBTOOL) --mode=install cp ./callBack.la $(phplibdir)
+
+./callBack.la: $(shared_objects_callBack) $(CALLBACK_SHARED_DEPENDENCIES)
+	$(LIBTOOL) --mode=link $(CC) $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS) $(LDFLAGS) -o $@ -export-dynamic -avoid-version -prefer-pic -module -rpath $(phplibdir) $(EXTRA_LDFLAGS) $(shared_objects_callBack) $(CALLBACK_SHARED_LIBADD)
+

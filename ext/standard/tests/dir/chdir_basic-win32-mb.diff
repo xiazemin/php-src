@@ -1,0 +1,4 @@
+005+ string(113) "/Users/didi/PhpstormProjects/c/php-src/ext/standard/tests/dir/私はガラスを食べられますlevel_one"
+005- string(%d) "%s私はガラスを食べられますlevel_one"
+009+ string(165) "/Users/didi/PhpstormProjects/c/php-src/ext/standard/tests/dir/私はガラスを食べられますlevel_one/私はガラスを食べられますlevel_two"
+009- string(%d) "%s私はガラスを食べられますlevel_one%e私はガラスを食べられますlevel_two"
